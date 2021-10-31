@@ -1,0 +1,11 @@
+.contact-list{
+    background: $clr-bg1;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-height: 500px;
+    overflow-y: auto;
+
+}

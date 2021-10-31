@@ -1,0 +1,45 @@
+.transfer-fund{
+    align-self: flex-start;
+    background: $clr-bg2;
+    padding: 20px 40px;
+    // width: 450px;
+    border-radius: 10px;
+
+    h2{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        label{
+            font-size: 14px;
+            color: $clr-txt2;
+        }
+
+        input{
+            width: 100%;
+            font-size: 16px;
+            color: $clr-txt2;
+            font-weight: 400;
+            padding: 5px 10px;
+            margin: 0 0;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            letter-spacing: 1px;
+        }
+
+        button{
+            padding: 10px 10px;
+            font-size: 14px;
+            margin-top: 10px;
+            width: 100%;
+            letter-spacing: normal;
+        }
+    }
+
+}

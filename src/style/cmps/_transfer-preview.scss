@@ -1,0 +1,34 @@
+.transfer-preview {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $clr-bg3;
+    border-radius: 5px;
+    padding: 10px;
+
+    img {
+        width: 40px;
+        border-radius: 50%;
+    }
+
+    p{
+        flex-grow: 1;
+        margin-left: 20px;
+    }
+
+    .date{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: flex-end;
+
+        h4{
+            font-size: 12px;
+            font-weight: 400;
+
+            &:last-child{
+                color: #fff3;
+            }
+        }
+    }
+}

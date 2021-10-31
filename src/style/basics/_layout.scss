@@ -1,0 +1,25 @@
+.main-layout{
+    display: grid;
+    grid-template-columns: 5rem minmax(300px, 1fr) 5rem;
+
+    @media screen and(max-width: $tablet-breakpoint){
+        grid-template-columns: 3rem minmax(300px, 3fr) 1rem;
+    }
+    
+    @media screen and(max-width: $mobile-breakpoint){
+        grid-template-columns: 1rem minmax(300px, 1fr) 1rem;
+    }
+
+    >*{
+        grid-column: 2;
+
+        &.full{
+            grid-column: 1/-1; 
+        }
+    }
+}
+
+.page{
+    min-height: 80vh;
+    margin-top: 40px;
+}

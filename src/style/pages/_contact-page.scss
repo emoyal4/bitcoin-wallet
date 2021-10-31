@@ -1,0 +1,122 @@
+.contact-page {
+    justify-self: center;
+    position: relative;
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    background: $clr-bg1;
+    border-radius: 13px;
+    padding: 60px 30px 30px;
+
+    @media screen and(max-width: 950px){
+        flex-direction: column;
+    }
+
+    .contact-nav {
+        position: absolute;
+        top: -7px;
+        left: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            background: transparent;
+            border: none;
+            color: $clr-txt2;
+            font-size: 14px;
+            cursor: pointer;
+            transition: color 0.2s;
+
+            &:first-child{
+                text-align: start;
+                padding-left: 30px;
+            }
+            &:last-child{
+                text-align: end;
+                padding-right: 30px;
+            }
+
+            &:hover {
+                color: $clr-txt1;
+            }
+        }
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        background: $clr-bg2;
+        padding: 20px;
+        gap: 10px;
+        flex-grow: 1;
+        
+
+        img {
+            width: 130px;
+            margin-bottom: 40px;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+
+        label {
+            padding-left: 10px;
+            align-self: flex-start;
+            font-size: 14px;
+            color: $clr-txt2;
+
+            &:not(:first-of-type) {
+                margin-top: 10px;
+            }
+        }
+
+        h2,
+        input {
+            width: 100%;
+            font-size: 18px;
+            color: $clr-txt1;
+            font-weight: 400;
+            padding: 5px 10px;
+            margin: 0 0;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            padding-top: 8px;
+        }
+
+        input {
+            background: $clr-bg3;
+        }
+    }
+
+    .btn-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    button {
+        margin-top: 20px;
+        width: 150px;
+        padding: 10px 20px;
+
+        &.remove-btn{
+            background: $clr-pink;
+            &:hover{
+                background: transparent;
+                border: 1px solid $clr-pink;
+                color: $clr-pink;
+            }
+        }
+    }
+    .transfer-container{
+        flex-grow: 4;
+    }
+}

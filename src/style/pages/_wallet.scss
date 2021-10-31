@@ -1,0 +1,154 @@
+.wallet {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    @media screen and(max-width: $large-breakpoint) {
+        flex-direction: column;
+    }
+
+    .left{
+        flex-grow: 1;
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+        justify-content: space-between;
+
+        @media screen and(max-width: $normal-breakpoint) {
+            flex-direction: column;
+        }
+    }
+
+    .user-info {
+        flex-grow: 1;
+        margin-top: 10px;
+        min-height: 300px;
+        width: 100%;
+        background: $clr-bg3;
+        padding: 20px;
+        border-radius: 13px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 10px;
+
+        .user-info-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+    
+            >div{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                
+                h2{
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: rgba($clr-txt1, 0.5);
+                    text-transform: capitalize;
+
+                    &:first-child{
+                        font-size: 22px;
+                        font-weight: 600;
+                        color: $clr-pink;
+                    }
+                }
+            }
+            img {
+                width: 100px;
+                border-radius: 13px;
+            }
+        }
+
+        button {
+            background: $clr-blue;
+            border: 1px solid transparent;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 17px;
+            font-weight: 700;
+            color: $clr-txt1;
+            margin-top: 40px;
+            cursor: pointer;
+        }
+
+        h1 {
+            margin-top: 50px;
+            width: 80%;
+            font-size: 28px;
+        }
+
+        .user-balance {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: $clr-bg2;
+            padding: 20px;
+            border-radius: 10px;
+
+            h3 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+
+                span:first-child {
+                    font-size: 15px;
+                    font-weight: 400;
+                }
+                span:nth-child(2) {
+                    font-size: 25px;
+                    color: $clr-blue;
+                }
+                span:nth-child(3) {
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: rgba($clr-txt1, 0.5);
+                }
+            }
+        }
+    }
+
+    .user-login {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background: $clr-bg3;
+        background-image: url(https://cdn.dribbble.com/users/610636/screenshots/14951872/media/b74ba6d0038ff98fb25563d34cb23578.png);
+        background-blend-mode: multiply;
+        background-position: 60% 23%;
+        height: 500px;
+        border-radius: 13px;
+        padding: 40px;
+
+        h1 {
+            font-size: 40px;
+            width: 70%;
+        }
+
+        button {
+            width: 100%;
+        }
+    }
+
+    .charts {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media screen and(max-width: $normal-breakpoint) {
+            max-width: 100%;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 400;
+
+            &:nth-child(3) {
+                margin-top: 30px;
+            }
+        }
+    }
+}
